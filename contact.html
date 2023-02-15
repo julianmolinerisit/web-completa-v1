@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal page home.">
+    <meta name="robots" content="index, follow" /> <!--Le dice a los robots de los navegadores 
+    que rastreen nuestra pagina y la muestren en las busquedas.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/Ico/logo.png" type="image/x-icon">
+    <title>JMC</title> <!--Julian Molineris Home.-->
+
+
+
+
+    <!--Pasar de a uno a css y ver donde falla-->
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-content">
+
+            <div class="logo">
+                <img src="./assets/Ico/logo.png" alt="logo" class="logo">
+
+            </div>
+
+            <div class="menu" id="show-menu">
+
+                <nav class="navbar-right">
+                    <ul>
+                        <li><a href="./index.html"> <i class="fas fa-home"></i>About</a></li>
+                        <li><a href="./portfolio.html"><i class="fab fa-youtube"></i>Portfolio</a></li>
+                        <li><a href="./resume.html"><i class="fas fa-file-alt"></i>Resume</a></li>
+                        <li><a href="./contact.html"><i class="fas fa-headset"></i>Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+        <div id="icon-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="linea"></div>
+    </header>
+
+
+    <div class="container-all" id="move-content">
+
+        <div class="espacio"></div>
+        <div class="texto-uno">
+            <h2 class="titulo-cel">Julian´s phone</h2>
+        </div>
+        <div class="contenedor">
+
+            <div class="imagen-cel">
+
+                <div class="btn-container" id="img-cel">
+
+                    <div class="item1">
+                        <a data-modal-id="pw-portafolio">
+                            <img class="btn-red" src="./assets/Ico/ico-tel.png" alt=""></a>
+                        <p class="nombre">Telefono</p>
+                    </div>
+                    <div class="item2">
+                        <a id="dos" onclick="location.href='https://www.instagram.com/julianmolineris/'">
+                            <img class="btn-red" src="./assets/Ico/ico-instagram.png" alt=""></a>
+                        <p class="nombre">Instagram</p>
+                    </div>
+                    <div class="item3">
+                        <a id="tres" onclick="location.href='https://www.linkedin.com/in/julianmolineris/'">
+                            <img class="btn-red" src="./assets/Ico/ico-linkedin.png" alt=""></a>
+                        <p class="nombre">Linkedin</p>
+                    </div>
+                    <div class="item4">
+                        <a data-modal-id="message">
+                            <img class="btn-red" src="./assets/Ico/ico-gmail.png" alt=""></a>
+                        <p class="nombre">Correo</p>
+                    </div>
+                    <div class="item5">
+                        <a id="cinco" onclick="location.href='https://www.facebook.com'">
+                            <img class="btn-red" src="./assets/Ico/ico-twitter.png" alt=""></a>
+                        <p class="nombre">Twitter</p>
+                    </div>
+                    <div class="item6">
+                        <a id="seis" onclick="location.href='https://www.facebook.com'">
+                            <img class="btn-red" src="./assets/Ico/ico-youtube.png" alt=""></a>
+                        <p class="nombre">Youtube
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <!-- Modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div id="pw-portafolio" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+                    <div class="eins-modal-content">
+                        <div class="eins-modal-close"></div>
+                        <div class="pw-content">
+                            <div class="eins-modal-preview">
+                                <img src="./assets/Ico/ico-user.png" alt="" class="ico-user">
+                            </div>
+
+                            <div class="eins-modal-text-2">
+                                <h2 class="modal-title-name">Julian Molineris</h2>
+                            </div>
+                            <div class="eins-modal-text-3">
+                                <h3 class="modal-txt">Llamar:</h3>
+                                <h3 class="modal-txt1">Enviar Mensaje:</h3>
+                                <div class="eins-modal-tec">
+                                    <a href="tel:+543412527455"><img src="./assets/Ico/ico-tel.png" alt=""
+                                            class="modal-icons"></a>
+                                    <a href="
+                            https://wa.me/+54543412527455?text=%C2%A1Hola%20Julian!
+                            "><img src="./assets/Ico/ico-whatsapp.png" alt="" class="modal-icons"></a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="message" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <form class="form" action="https://formspree.io/f/xeqdwlbq" method="POST">
+                <label>Tu Correo Electrónico:
+                    <input type="email" name="_replyto">
+                </label>
+
+                <label>Tu Mensaje:
+                    <textarea name="message"></textarea>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="./assets/js/eins-modal.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

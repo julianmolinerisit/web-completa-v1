@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal page home.">
+    <meta name="robots" content="index, follow" /> <!--Le dice a los robots de los navegadores
+    que rastreen nuestra pagina y la muestren en las busquedas.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/Ico/logo.png" type="image/x-icon">
+    <title>JMP</title> <!--Julian Molineris Home.-->
+
+
+    <style>
+        .img-tablet {
+            height: 63%;
+            width: 63%;
+
+        }
+
+        .tablet-port {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+
+
+        /*Briefcase*/
+
+
+
+        .briefcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(182px, auto));
+            gap: 15px;
+            width: 400%;
+            margin: 0 auto;
+        }
+
+        .briefcase-grid img {
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+            transition: transform 0.2s ease;
+            cursor: pointer;
+
+        }
+
+        .briefcase-grid img:hover {
+            transform: scale(1.1);
+        }
+
+
+        .briefcase-grid img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.2s ease;
+            cursor: pointer;
+
+        }
+
+        .briefcase-grid img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <header> <!--Seccion superior del sitio-->
+        <div class="header-content">
+            <div class="logo">
+                <img src=".//assets/Ico/logo.png" alt="logo" class="logo">
+            </div>
+            <div class="menu" id="show-menu">
+                <nav class="navbar-right">
+                    <ul>
+                        <li><a href="./index.html"> <i class="fas fa-home"></i>About</a></li>
+                        <li><a href="./portfolio.html"><i class="fab fa-youtube"></i>Portfolio</a></li>
+                        <li><a href="./resume.html"><i class="fas fa-file-alt"></i>Resume</a></li>
+                        <li><a href="./contact.html"><i class="fas fa-headset"></i>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="linea"></div>
+    </header>
+
+    <div class="espacio0"></div>
+
+    <div class="container-all" id="move-content">
+
+        <section class="magico">
+            <div class="contenido center-align">
+                <img src="./assets/img/pantalla-img.png" alt="" class="tablet">
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="carousel center-align">
+                                <div class="carousel-item">
+                                    <div class="only-mobi">
+                                        <h2 class="subtitulo"><a href="./CV-JulianMolineris/CV.html"
+                                                class="web">www.cvio.io</h2></a>
+                                        <div class="linea-division"></div>
+                                        <p class="sabor">Tu CV en linea. </p>
+                                    </div>
+                                    <img src="./assets/img/cvio.png" alt="" class="contenido">
+                                    <!-- <p class="text-portafolio">¡Bienvenido a nuestro sitio web de edición de CVs en
+                                        línea! <br>
+                                        Nuestra plataforma es la solución perfecta para aquellos que<br>
+                                        buscan crear un CV atractivo y profesional en poco tiempo. <br>
+                                        Puedes ingresar tu información personal, educación, <br>experiencia laboral
+                                        y habilidades de forma fácil y sencilla. <br>
+                                        Ofrecemos una amplia selección de plantillas <br>personalizables para que
+                                        puedas crear el CV perfecto. <br>
+                                        Una vez que hayas terminado de crear tu CV,<br>
+                                        puedes descargarlo en formato PDF o Word y compartirlo<br>
+                                        con tus
+                                        futuros empleadores. <br>
+                                        Regístrate hoy y comienza a crear el CV de<br>
+                                        tus sueños con nuestro servicio en línea. <br></p> -->
+                                </div>
+
+
+                                <div class="carousel-item">
+                                    <div class="only-mobi">
+                                        <h2 class="subtitulo">www.inspirar.com</h2>
+                                        <div class="linea-division"></div>
+                                        <p class="sabor">Inspiraciones en lina. </p>
+                                    </div>
+                                    <img src="./assets/img/Inspirate.png" alt="" class="contenido">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="only-mobi">
+                                        <h2 class="subtitulo">www.slife.com</h2>
+                                        <div class="linea-division"></div>
+                                        <p class="sabor">La segunda oportunidad. </p>
+                                    </div>
+
+                                    <img src="./assets/img/slife.png" alt="" class="contenido">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="only-mobi">
+                                        <h2 class="subtitulo">www.beautyhouse.com</h2>
+                                        <div class="linea-division"></div>
+                                        <p class="sabor">Club de uñas. </p>
+                                    </div>
+
+                                    <img src="./assets/img/beauty house.png" alt="" class="contenido">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    <script src="./assets/js/materialize.min.js"></script>
+    <!-- Main -->
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

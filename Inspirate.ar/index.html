@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+           
+            <!--En este meta estamos diciendo que se adapte al ancho del dispositivo, que el usuario no le haga zoom, 
+            que su escalado inicial sea 1.0 y que su maximo escalado sea en 1.0 y su minimo de escalado sea 1.0-->
+            
+                <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                <meta charset="UTF-8">
+                <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+                <link rel="stylesheet" href="css/estilos.css">
+                <link rel="shortcut icon" href="img/favicon.png"> 
+                <title>Blog-Demo</title>
+       
+        </head>
+
+        <body>
+
+            <!--Header - menu-->
+            <header>
+              <div class="header-content">
+
+                      <div class="logo">
+                          <h1>Inspirate.<b>ar</b></h1>
+                      </div>
+
+                      <div class="menu" id="show-menu">
+                           <nav>
+                                <ul>
+                                     <li><a href="#"><i class="fa-solid fa-user"></i> Inicio</a></li>
+                                     <li class="menu-selected"><a href="#" class="text-menu-selected"> 
+                                     <i class="fa-solid fa-location-dot"></i>Blog</a></li>
+                                     <li><a href="#"><i class="fa-solid fa-language"></i> Contacto</a></li>
+                                </ul>
+                           </nav>
+                      </div>
+
+              </div>    
+
+                 <!--Creamos en un div el icono de menu, de esta forma lo vamos a trabajar en js para ocultarlo.-->
+                <div id="icon-menu">
+                      <i class="fas fa-bars"></i>
+                </div>
+
+            </header>
+
+    <!--Portada-->
+    <!--Este div va a contener todo lo de nuestra web, lo usamos para hacer la animacion
+        del menu--> 
+
+      <div class="container-all" id="move-content">
+
+          <div class="container-cover">
+                <div class="container-info-cover">
+                      <h1>¡Pura inspiración y garra!</h1>
+                      <p class="Txt-bienvenida">
+                        <b>“No te rindas tratando de hacer lo que realmente deseas hacer. 
+                            Donde hay amor e inspiración, nada puede salir mal”.</b>
+                        </p>
+                </div>
+          </div>
+
+          <div class="container-content">
+               <article>
+                        <h1>¡Hola, te estaba esperando!</h1>
+                        <p>Bienvenidos a mí blog, en este sitio vas a poder encontrar toda la inspiración necesaria para esos
+                            días en los que no podes seguir adelante, esos días en los que necesitas un empujón.Mi nombre es 
+                            Julian Molineris y estoy aquí para contarte historias inspiradoras de gente como vos y como yo. 
+                            Personas que no bajaron los brazos y hoy están cambiando el mundo. ¡Espero disfrutes la lectura!</p>
+                        <p>Para comenzar con este increíble recorrido, te voy a dejar un par de pasos para que aproveches al máximo 
+                            la lectura.<b id="tittle-instrucciones"> Es momento de traerte al aquí y ahora 
+                                con una pequeña técnica de respiración:</b>
+                        <p> 
+                        
+                        1. Colócate en una posición cómoda e inhala profundo.</br>
+                        2. Aguanta la respiración y cuenta hasta 10.</br>
+                        3. Ahora exhala muy lentamente sintiendo todo el aire
+                         salir de tu cuerpo.</br>
+                        4. Repite el paso 2 y 3 hasta que te sientas relajada/o.</br>
+                        5. Clickea <a href="#"><b>aquí</b></a> y comienza tu recorrido. 
+                        </p>
+                        </p>
+                        <video autoplay controls loop src="vid/video.mp4#t=2"></video>
+
+                        <p><b>Dale play al vídeo para disfrutar de una inmersión sonora mientras
+                            realizas la meditación.
+                        </b></p>
+                </article>
+
+
+                <div class="container-aside">	
+                     <aside>
+                           <img src="img/img-julian.png" alt="">
+                           <h2>Julian Molineris</h2>
+                           <p>Hola, mi nombre es Julian Molineris. Tengo 22 años y actualmente me encuentro construyendo múltiples
+                             plataformas enfocadas en el crecimiento personal, es un trabajo de medio tiempo alternando entre mi 
+                            trabajo actual y mis diversos hobbies. Continúa con la lectura para conocer más acerca de mí y mi 
+                            trabajo.</p>
+                           <a href="#"><button>leer más</button></a>
+                      </aside>
+
+                      <aside>
+                        <img src="img/img-tutomeditar.png" alt="">
+                        <h2>¿Cómo meditar facíl?</h2>
+                        <p>¿Alguna vez te has planteado aprender a meditar? son muchas las personas que han encontrado en la 
+                            meditación una vía de escape para calmar su mente. Y es que esta práctica milenaria aporta grandes
+                             beneficios para el bienestar mental y emocional. Así que, si quieres saber cómo puedes empezar
+                             a meditar, sigue leyendo.</p>
+                        <a href="#"><button>leer más</button></a>
+                   </aside>
+
+
+                </div>
+          </div>
+
+          <div class="container-footer">	
+                <footer>
+                        <div class="logo-footer">
+                              <img src="img/ico-footer.png" alt="">
+                        </div>
+
+                        <div class="redes-footer">
+                             <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+                             <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
+                             <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+                        </div>
+
+                        <hr>
+                        <h4>© 2020 MagtimusPro - Todos los Derechos Reservados</h4>
+
+                </footer>
+
+          </div>
+
+      </div>
+
+     <script src="js/script.js"></script>
+ </body>
+</html>
