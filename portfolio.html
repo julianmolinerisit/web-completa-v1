@@ -13,7 +13,8 @@
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, user-scalable=no,
     initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="shortcut icon" href="./assets/Ico/logo.png" type="image/x-icon">
     <title>JMP</title> <!--Julian Molineris Home.-->
 
@@ -34,9 +35,113 @@
 
 
 
+        /*Materialize*/
+
+
+
+
+        .containera {
+            height: 65%;
+            width: 67%;
+            position: absolute;
+        }
+
+        .contenido {
+            z-index: -5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            max-width: 100%;
+        }
+
+
+
+        .contenidoa {
+            z-index: -5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100%;
+        }
+
+        .carousel .carousel-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+            top: -10px;
+            position: relative;
+            width: 100%;
+            height: 570px;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            border-radius: 20px;
+        }
+
+        .carousel {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 500px;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+        }
+
+        .carousel.carousel-slider {
+            top: 0;
+            left: 0;
+        }
+
+        .carousel.carousel-slider .carousel-fixed-item {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 20px;
+            z-index: 1;
+        }
+
+        .carousel.carousel-slider .carousel-fixed-item.with-indicators {
+            bottom: 68px;
+        }
+
+        .carousel.carousel-slider .carousel-item {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .carousel.carousel-slider .carousel-item h2 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 32px;
+        }
+
+        .carousel.carousel-slider .carousel-item p {
+            font-size: 15px;
+        }
+
+        .carousel .carousel-item {
+            visibility: hidden;
+            width: 530px;
+            height: 535px;
+            position: absolute;
+        }
+
+        .carousel .carousel-item>img {
+            width: 530px;
+            height: 535px;
+        }
+
         /*Briefcase*/
-
-
 
         .briefcase-grid {
             display: grid;
@@ -71,10 +176,64 @@
         .briefcase-grid img:hover {
             transform: scale(1.1);
         }
+
+
+
+
+
+        /* PORTAFOLIO */
+        .espacio0 {
+            width: 100%;
+            height: 100px;
+        }
+
+        /* 
+        RESPONSIVE-PORTAFOLIO */
+        @media screen and (max-width: 800px) {
+
+            .carousel .carousel-item {
+                visibility: hidden;
+                width: 530px;
+                height: 535px;
+                position: absolute;
+                top: -90px;
+                left: 0;
+            }
+
+            .espacio0 {
+                width: 0;
+                height: 0;
+            }
+
+            body {
+                overflow-x: hidden;
+            }
+
+            .linea {
+                display: none;
+            }
+        }
+
+        .container {
+            height: 65%;
+            width: 67%;
+            position: absolute;
+
+        }
+
+
+
+        @media screen and (max-width: 800px) {
+
+            .containera {
+                height: 0%;
+                width: 100%;
+                position: absolute;
+            }
+
+
+        }
     </style>
-
-
-
 </head>
 
 <body>
@@ -104,24 +263,17 @@
 
     <div class="container-all" id="move-content">
 
-        <section class="magico">
-            <div class="contenido center-align">
-                <img src="./assets/img/pantalla-img.png" alt="" class="tablet">
+        <div class="content-page">
+            <img src="./assets/img/pantalla-img.png" alt="" class="tablet">
 
-                <div class="container">
+            <div class="container">
 
-                    <div class="row">
-                        <div class="col s12">
-                            <div class="carousel center-align">
-                                <div class="carousel-item">
-                                    <div class="only-mobi">
-                                        <h2 class="subtitulo"><a href="./CV-JulianMolineris/CV.html"
-                                                class="web">www.cvio.io</h2></a>
-                                        <div class="linea-division"></div>
-                                        <p class="sabor">Tu CV en linea. </p>
-                                    </div>
-                                    <img src="./assets/img/cvio.png" alt="" class="contenido">
-                                    <!-- <p class="text-portafolio">¡Bienvenido a nuestro sitio web de edición de CVs en
+                <div class="row">
+                    <div class="col s12">
+                        <div class="carousel center-align">
+                            <div class="carousel-item">
+                                <img src="./assets/img/cvio.png" alt="" class="contenido">
+                                <!-- <p class="text-portafolio">¡Bienvenido a nuestro sitio web de edición de CVs en
                                         línea! <br>
                                         Nuestra plataforma es la solución perfecta para aquellos que<br>
                                         buscan crear un CV atractivo y profesional en poco tiempo. <br>
@@ -135,42 +287,21 @@
                                         futuros empleadores. <br>
                                         Regístrate hoy y comienza a crear el CV de<br>
                                         tus sueños con nuestro servicio en línea. <br></p> -->
-                                </div>
-
-
-                                <div class="carousel-item">
-                                    <div class="only-mobi">
-                                        <h2 class="subtitulo">www.inspirar.com</h2>
-                                        <div class="linea-division"></div>
-                                        <p class="sabor">Inspiraciones en lina. </p>
-                                    </div>
-                                    <img src="./assets/img/Inspirate.png" alt="" class="contenido">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <div class="only-mobi">
-                                        <h2 class="subtitulo">www.slife.com</h2>
-                                        <div class="linea-division"></div>
-                                        <p class="sabor">La segunda oportunidad. </p>
-                                    </div>
-
-                                    <img src="./assets/img/slife.png" alt="" class="contenido">
-                                </div>
-
-                                <div class="carousel-item">
-                                    <div class="only-mobi">
-                                        <h2 class="subtitulo">www.beautyhouse.com</h2>
-                                        <div class="linea-division"></div>
-                                        <p class="sabor">Club de uñas. </p>
-                                    </div>
-
-                                    <img src="./assets/img/beauty house.png" alt="" class="contenido">
-                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/Inspirate.png" alt="" class="contenido">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/slife.png" alt="" class="contenido">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/beauty house.png" alt="" class="contenido">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
         </section>
 

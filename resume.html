@@ -13,21 +13,72 @@
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="./assets/Ico/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
- <title>JMR</title> <!--Julian Molineris Home.-->
+    <link rel="shortcut icon" href="./assets/Ico/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <title>JMR</title> <!--Julian Molineris Home.-->
 
 
 
     <style>
-        body {
-            overflow: hidden;
+        /**--------Resume----------------------**/
+
+
+        .espacio-resume {
+            height: 100px;
+            width: 100%;
         }
 
-        @media (max-width: 900px) {
-            body {
-                overflow: auto;
+        .container-resume {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, auto));
+            gap: 12px;
+            height: 640px;
+            margin: 0 auto;
 
+        }
+
+        .div-resume {
+            width: 30%;
+            height: 50%;
+        }
+
+        .img-resume {
+            width: 325%;
+            height: 160%;
+        }
+
+        .title-resume {
+            font-size: var(--ttl);
+            color: var(--white);
+
+        }
+
+        .txt-resume {
+            padding: 12% 5%;
+            font-size: 0.80rem;
+            color: var(--white);
+
+        }
+
+        .color {
+            color: var(--aquamarine);
+            font-weight: 1000;
+            font-size: 2.5rem;
+        }
+
+        /* Responive-Resume */
+
+        @media (max-width: 700px) {
+            .txt-resume {
+                padding: 2% 5%;
+                margin-top: -40px;
+
+            }
+
+            .espacio-resume--footer {
+                height: 100px;
+                width: 100%;
             }
         }
     </style>
@@ -64,11 +115,12 @@
         </div>
         <div class="linea"></div>
     </header>
+
     <div class="container-all" id="move-content">
 
         <!------------------------------------------------------->
 
-        <div class="espacio"></div>
+        <div class="espacio-resume"></div>
         <main>
             <div class="container-resume">
                 <div class="div-resume"><img src=".//assets/Ico/ico-yo.png" alt="" class="img-resume"></div>
@@ -80,19 +132,14 @@
                         diagnostico y
                         reparación de <strong class="color">Hardware y software</strong> de equipos informáticos y
                         redes.
-                        <strong class="color">Desarrollador web y tester QA / Manual</strong>
+                        <strong class="color">Desarrollador web y tester QA / Manual.</strong>
                     </h1>
                 </div>
             </div>
-
-            <!------------------------------------------------------->
-
-
-
+            <div class="espacio-resume--footer"></div>
 
         </main> <!--Es el contenido central de nuestro website, la parte del medio-->
-        <footer> <!--Seccion final de la web-->
-        </footer>
+
     </div>
     <script src="./assets/js/script.js"></script>
 
