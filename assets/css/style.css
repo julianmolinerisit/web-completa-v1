@@ -669,7 +669,7 @@ label {
 }
 
 
-button {
+.button {
     margin: auto;
     padding: 1rem;
     text-transform: uppercase;
@@ -687,8 +687,8 @@ button {
     padding-left: 2.5rem;
 }
 
-button:after,
-button:before {
+.button:after,
+.button:before {
     position: absolute;
     font-family: 'Barrio', sans-serif;
     font-weight: bold;
@@ -697,36 +697,36 @@ button:before {
     transition: .3s all ease;
 }
 
-button:before {
+.button:before {
     content: '_';
     position: absolute;
     left: 1.4rem;
     top: .9rem;
 }
 
-button:after {
+.button:after {
     content: '>';
     position: absolute;
     left: .8rem;
     top: 1rem;
 }
 
-button:hover {
+.button:hover {
     box-shadow: 1px 1px 20px rgba(150, 150, 150, .2);
     top: -.1rem;
     right: -.1rem;
     cursor: pointer;
 }
 
-button:hover:before {
+.button:hover:before {
     content: '_';
     position: absolute;
     left: .8rem;
-    top: .7rem;
+    top: .64rem;
     transform: translateY(-1px);
 }
 
-button:hover:after {
+.button:hover:after {
     content: '>';
     position: absolute;
     left: 1.1rem;
