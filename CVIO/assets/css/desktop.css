@@ -1,0 +1,51 @@
+header img {
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    align-self: center;
+}
+
+.header--title-container h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    line-height: 5.6rem;
+    color: var(--just-white);
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+}
+
+.backgroundImg_revert--text {
+    font-size: 2.80rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    background-color: black;
+    color: var(--just-white);
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 550px;
+}
+
+
+.main-exchange-container .backgroundImg {
+    width: 100%;
+    height: 790px;
+    margin: 22 auto;
+    margin-bottom: 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.main-exchange-container .backgroundImg_revert {
+    width: 100%;
+    height: 900px;
+    margin: 0;
+    margin-top: 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,239 @@
+/*
+1. Posicionamiento --> static, absolute, relative, fixed
+2. Modelo de caja (Box model) --> margin, border, padding, content
+3. Tipografía --> tipos, tamaños de fuente, etc
+4. Estilos visuales --> box-shadow, border-radius, gradient, etc
+5. Otros --> reglas CSS y más
+*/
+
+
+:root {
+
+    /* Colores */
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-size: 65.5%;
+    font-family: "DM Sans", sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(207.8deg, var(--just-white) -22%, var(--black) 22%);
+    ;
+}
+
+header img {
+    width: 250px;
+    height: 150px;
+    margin-top: 30px;
+    align-self: center;
+}
+
+/* Va a mantener el width de 90% entre los 288 y 900px. */
+
+.header--title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 210px;
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    margin-bottom: 20px;
+}
+
+
+.backgroundImg_revert--text {
+    font-size: 1.60rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    background-color: black;
+    color: var(--just-white);
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 214px;
+}
+
+
+.header--title-container .header--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--off-white);
+    color: var(--black);
+    /* Sombra */
+    box-shadow: 0px 2px 2px #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.header--button:hover {
+    background-color: greenyellow;
+    border-width: 3.5px;
+    border-style: outset;
+    border-color: white;
+
+}
+
+.revert--button1 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 8%;
+    padding: 15px;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--off-white);
+    /* Sombra */
+    box-shadow: 0px 2px 2px #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.revert--button2:hover {
+    background-color: black;
+    color: var(--just-white);
+
+
+}
+
+
+.revert--button2 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 8%;
+    padding: 15px;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    background-color: black;
+    /* Sombra */
+    box-shadow: 0px 2px 2px #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--just-white);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('../Ico/down-arrow.svg');
+}
+
+
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.main-exchange-container {
+    width: 100%;
+    height: 1200px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container--title {
+    width: 100%;
+    min-width: 250px;
+    max-width: 900px;
+    margin: auto;
+    background-color: greenyellow;
+}
+
+.main-exchange-container .backgroundImg {
+    width: 100%;
+    height: 790px;
+    margin: 22 auto;
+    margin-bottom: 10px;
+    background-image: url('../img/background--image-terra.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.main-exchange-container .backgroundImg_revert {
+    width: 100%;
+    height: 760px;
+    margin: 0;
+    margin-bottom: 10px;
+    background-image: url('../img/background--image-space.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-exchange-container h2 {
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+    /* Tamaño de fuente para dispositivos móviles */
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}

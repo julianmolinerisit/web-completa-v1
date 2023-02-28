@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./assets/css/style_cvio.css">
+    <link rel="stylesheet" href="./assets/css/tablet.css" media="(min-width: 530px)" />
+    <link rel="stylesheet" href="./assets/css/desktop.css" media="(min-width: 800px)" />
+    <link rel="stylesheet" href="./assets/css/desktop-large.css" media="(min-width: 1150px)" />
+    <link rel="stylesheet" href="./assets/css/user-style.css">
+
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <main>
+            <section class="main-exchange-container">
+                <div class="backgroundImg">
+                    <img src="./assets/Ico/cvio_ico.svg" alt="">
+                    <div class="header--title-container">
+                        <h1>Crea tu cv en línea fácil y rápido.</h1>
+                        <a href="#ancla_revert" class="header--button">Cambiar mi futuro<span></span></a>
+                    </div>
+                </div>
+                <span id="ancla_revert"></span>
+                <div class="main-exchange-container--title">
+                    <h2>Te apoyamos en tu busqueda laboral.</h2>
+                </div>
+                <div class="backgroundImg_revert">
+                    <a href="#" id="myBtn1" class="revert--button1">Crear Cv</a>
+                    <a href="#" id="myBtn" class="revert--button2">Acceder</a>
+                    <p class="backgroundImg_revert--text">Crea tu CV profesional de manera fácil y accesible para
+                        destacar en el mercado laboral. Te proporcionamos herramientas para personalizar y actualizar
+                        constantemente tu CV, puedes co0mpartirlo y exportarlo en diferentes formatos. Únete a nosotros
+                        para dar un paso importante hacia tu futuro.</p>
+                </div>
+        </main>
+    </header>
+
+
+    <!-- The Modal -->
+    <div id="myModal2" class="modal2">
+
+        <!-- Modal content -->
+        <div class="modal-content2">
+            <span class="close2">&times;</span>
+            <h1 class="title-form">Registrate como usuario:</h1>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <div id="usernameError" class="error"></div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <div id="passwordError" class="error"></div>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <div id="emailError" class="error"></div>
+
+                <input type="submit" value="Sign Up">
+            </form>
+
+        </div>
+    </div>
+
+
+    <div id="myModal3" class="modal3">
+        <div class="modal-content3">
+            <span class="close3">&times;</span>
+            <h1 class="title-form">Ingresa como usuario:</h1>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password">
+                <input type="submit" value="Sign In">
+            </form>
+        </div>
+    </div>
+
+    <script src="./assets/js/user-modal.js"></script>
+    <script src="./assets/js/signup.js"></script>
+    <script src="./assets/js/login.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+.main-tables-container {
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+}
+
+.product-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+}
+
+.plans-container--slider {
+    justify-content: center;
+}
+
+.backgroundImg_revert--text {
+    font-size: 1.80rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    background-color: black;
+    color: var(--just-white);
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 440px;
+}
+
+.header--title-container h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 4.6rem;
+    color: var(--just-white);
+    margin: 30px;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
