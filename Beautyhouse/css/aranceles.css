@@ -1,0 +1,145 @@
+.form-section {
+    display: flex;
+    width: fit-content;
+    margin-left: 6%;
+    margin-right: 20px;
+}
+
+
+.form-info,
+.contact-info {
+    padding: 57px 30px 52px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px 6px rgb(0 0 0 / 25%);
+    background-color: #fff;
+    transform: translateY(-145px);
+}
+
+.form-info h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #404140;
+    margin-bottom: 22px;
+}
+
+.form-info p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #404140;
+    margin-bottom: 45px;
+}
+
+.contact-info {
+    padding: 50px 30px 50px;
+    background-color: #ff517b;
+    color: #fff;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 16px;
+    border-radius: 25px;
+    border: 1px solid #5a5d5a;
+}
+
+input[type='button'] {
+    width: 122px;
+    background-color: #fb527a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-info h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 42px;
+}
+
+.contact-info>p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 55px;
+}
+
+.cont-icons i {
+    font-size: 25px;
+}
+
+.cont-data span {
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.cont-data p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.contact.social-icons a i {
+    border-radius: 25px;
+    margin: 0 5px;
+}
+
+.aranceles-right {
+    width: 60%;
+    margin: 20px;
+}
+
+.aranceles-left {
+    width: 40%;
+}
+
+.rownie {
+    display: flex;
+
+}
+
+
+
+/* make responsive */
+@media only screen and (max-width: 900px) {
+    .rownie {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-info, .contact-info {
+        margin-top: 10px;
+        }
+
+    .aranceles-right {
+
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+    }
+
+    .aranceles-left {
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 10px;
+    }
+
+    .form-info,
+    .contact-info {
+        padding: 30px;
+        transform: translateY(0);
+    }
+
+    .form-info img {
+        max-width: 100%;
+    }
+
+    .myMap iframe {
+        height: 50vh;
+    }
+}

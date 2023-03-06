@@ -1,0 +1,115 @@
+:root {
+
+    /* Colores */
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --principal: #00c1ca;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+
+}
+
+/* helper */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+i {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-lg {
+    width: auto;
+    margin: 0 auto;
+}
+
+.row,
+.row::after,
+.row::before,
+.tab-content {
+    clear: both;
+    display: table;
+    width: 100%;
+}
+
+.mb-18{
+    margin-bottom: 18px;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-9, .col-10, .col-11, .col-12{
+    float: left;
+    padding: 0 15px;
+}
+.col-1{
+    width: calc((100% * 1) / 12);
+}
+
+.pl-0{
+    padding-left: 0;
+}
+
+.col-5{
+    width: calc((100% * 5) / 12);
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: calc((100% * 7) / 12);
+}
+
+.col-11{
+    width: calc((100% * 11) / 12);
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+html {
+    font-size: 65.5%;
+    font-family: "DM Sans", sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    text-align: center;
+    background: var(--principal);
+    ;
+}
